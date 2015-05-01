@@ -1,7 +1,12 @@
 # docker-django-1.7-staging
-Staging container with django 1.7, postgres, redis and celery  
+Staging container with django 1.7, postgres, redis and celery.
+Run it with  
+```# docker run -ti --net=host nyxcharon/docker-django-1.7-staging```   
+From here git clone your project or start a new one.  
 
-if you get this message:  
+Known issue:
+--------------------------------------
+If you get this message:  
 '# service postgresql start  
  * Starting PostgreSQL 9.3 database server*   
  * The PostgreSQL server failed to start. Please check the log output:  

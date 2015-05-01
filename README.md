@@ -14,17 +14,10 @@ If you get this message:
   2015-05-01 19:04:36 UTC FATAL:  could not access private key file "/etc/ssl/private/ssl-cert-snakeoil.key":        Permission denied   [fail] '  
   ```
 
-Delete the image:
-```# docker rmi imageid```
-
-Edit /etc/default/docker.io , add 
-```DOCKER_OPTS="--storage-driver=devicemapper"  ```
-
-Restart the service  
-```# service docker.io restart  ```
-
-Re-run (and pull) the image:  
-```# docker run -ti --net=host nyxcharon/docker-django-1.7-staging  ```
+Delete the image: ```# docker rmi imageid```  
+Edit /etc/default/docker.io , add  ```DOCKER_OPTS="--storage-driver=devicemapper"  ```  
+Restart the service  ```# service docker.io restart  ```  
+Re-run (and pull) the image:  ```# docker run -ti --net=host nyxcharon/docker-django-1.7-staging  ```  
 
 
 
